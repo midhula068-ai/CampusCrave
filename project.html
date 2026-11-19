@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusCrave - LPU Food Ordering</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <h1>🍔 CampusCrave</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#stores">Stores</a>
+            <a href="#jobs">Part-Time Jobs</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button onclick="viewCart()">🛒 Cart</button>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home">
+
+        <h2>Welcome to CampusCrave!</h2>
+
+        <p>
+            Discover your favourite food outlets at Lovely Professional University.
+            Explore menus, check prices and order food easily.
+        </p>
+
+        <a href="#stores">
+            <button>Explore Stores</button>
+        </a>
+
+    </section>
+
+
+    <!-- Store Listing -->
+    <section id="stores">
+
+        <h2>Explore Food Stores</h2>
+
+        <div id="storeList">
+
+            <!-- Stores will be displayed using JavaScript -->
+
+        </div>
+
+    </section>
+
+
+    <!-- Individual Store Menu -->
+    <section id="menu">
+
+        <h2 id="storeName">Store Menu</h2>
+
+        <div id="menuList">
+
+            <!-- Individual store menu appears here -->
+
+        </div>
+
+    </section>
+
+
+    <!-- Cart and Booking -->
+    <section id="booking">
+
+        <h2>Your Food Booking</h2>
+
+        <div id="cartItems"></div>
+
+        <h3 id="totalPrice">Total: ₹0</h3>
+
+        <label>Your Name:</label>
+        <input type="text" id="customerName">
+
+        <br><br>
+
+        <label>Choose Service:</label>
+
+        <select id="orderType">
+            <option value="Pickup">Self Pickup</option>
+            <option value="Delivery">Campus Delivery</option>
+        </select>
+
+        <br><br>
+
+        <label>Preferred Time:</label>
+        <input type="time" id="bookingTime">
+
+        <br><br>
+
+        <label>Delivery / Pickup Location:</label>
+        <input type="text" id="location">
+
+        <br><br>
+
+        <button onclick="placeOrder()">Confirm Booking</button>
+
+    </section>
+
+
+    <!-- Part-Time Job Section -->
+    <section id="jobs">
+
+        <h2>Join CampusCrave Delivery Team</h2>
+
+        <p>
+            Interested students can register for flexible
+            part-time delivery opportunities.
+        </p>
+
+        <form id="jobForm">
+
+            <label>Full Name:</label>
+            <input type="text" id="studentName" required>
+
+            <br><br>
+
+            <label>Student ID:</label>
+            <input type="text" id="studentID" required>
+
+            <br><br>
+
+            <label>Contact Number:</label>
+            <input type="tel" id="phone" required>
+
+            <br><br>
+
+            <label>Available Time:</label>
+
+            <select id="availableTime" required>
+
+                <option value="">Select Time</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+                <option>Weekends</option>
+
+            </select>
+
+            <br><br>
+
+            <button type="submit">Register Now</button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <h3>CampusCrave</h3>
+
+        <p>A Unified Food Discovery and Delivery App for LPU</p>
+
+        <p>© 2026 CampusCrave</p>
+
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
